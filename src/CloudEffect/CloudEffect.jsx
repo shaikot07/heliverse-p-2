@@ -1,5 +1,6 @@
 import { useRef, } from "react";
 import { useEffect } from "react";
+import HeroSection from "../Home/HeroSection/HeroSection";
 
 
 const CloudEffect = () => {
@@ -120,9 +121,10 @@ const CloudEffect = () => {
     }, []);
    
     return (
-        <div>
+        <div className="pt-10">
             <canvas id="canvas" ref={canvasRef}></canvas>
-            
+            <h1 className="text-3xl text-white">amar sonar </h1>
+           <HeroSection/>
         </div>
     );
 };

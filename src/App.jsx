@@ -1,17 +1,26 @@
-import CloudEffect from "./CloudEffect/CloudEffect"
 import Navbar from "./Home/navbar/Navbar"
 
+import { useRef, useEffect } from 'react'
+import Fluid from 'webgl-fluid'
 
 function App() {
+  const canvas = useRef(null);
+  useEffect(() => {
+    const c = canvas.current;
+    Fluid(c);
+  }, []);
   return (
     <>
-      
-        <div>
-        <Navbar></Navbar>
-        <CloudEffect>
+      <div className="app">
+        <canvas className="w-full "
+          ref={canvas}
           
-        </CloudEffect>
+        />
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          <Navbar />
+          
         </div>
+      </div>
     </>
   )
 }
