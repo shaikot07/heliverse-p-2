@@ -124,6 +124,8 @@ const CloudEffect = () => {
         <div className="pt-10">
             <canvas id="canvas" ref={canvasRef}></canvas>
             <h1 className="text-3xl text-white">amar sonar </h1>
+            <h1 className="text-3xl text-white">amar sonar bangla </h1>
+            <h1 className="text-3xl text-white">ami tomay valo basi </h1>
            <HeroSection/>
         </div>
     );
