@@ -1,8 +1,8 @@
-<<<<<<< HEAD
-=======
+
+
 
 --project Setup Guideline
-
+=======
 --clone this project
 
 --open the project in your Machine
